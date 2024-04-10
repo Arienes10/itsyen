@@ -222,25 +222,32 @@ for i,v in pairs(getInfo("Inventory").Misc) do
 	end
 end
 local startTime = os.time()
-while getgenv().MoneyPrinter.autoBalloons do task.wait()
-	if getgenv().MoneyPrinter.autoPresents then getPresents() end
-	for _,Balloon in pairs(Library.Network.Invoke("BalloonGifts_GetActiveBalloons")) do task.wait(0.03)
-		if Balloon.Id then
-			while Library.Network.Invoke("BalloonGifts_GetActiveBalloons")[Balloon.Id] do task.wait(0.03)
-				if not getTool() then equipTool(getgenv().MoneyPrinter.toolName) end
-				local breakableId = getBalloonUID(getCurrentZone())
-				if breakableId == "Skip" then break end
-				if breakableId then
-					HRP.CFrame = CFrame.new(Balloon.LandPosition)
-					Library.Network.Fire("Breakables_PlayerDealDamage", breakableId)
-				elseif not Balloon.Popped then
-					HRP.CFrame = CFrame.new(Balloon.Position + Vector3.new(0,30,0))
-					Slingshot.fireWeapon()
-					Library.Network.Fire("BalloonGifts_BalloonHit", Balloon.Id)
-				end
-			end
-		end
-	end
+while getgenv().MoneyPrinter.autoBalloons do
+    task.wait()
+    if getgenv().MoneyPrinter.autoPresents then
+        getPresents()
+    end
+    
+    for _,Balloon in pairs(Library.Network.Invoke("BalloonGifts_GetActiveBalloons")) do
+        task.wait(0.03)
+        if Balloon.Id then
+            while Library.Network.Invoke("BalloonGifts_GetActiveBalloons")[Balloon.Id] do
+                task.wait(0.03)
+                
+                -- Check if the character has a tool equipped, if not, equip the tool
+                if not getTool() then
+                    equipTool(getgenv().MoneyPrinter.toolName)
+                end
+                
+                -- Adjust character's position to float on the balloon
+                local balloonPosition = Balloon.Position
+                local characterPosition = balloonPosition + Vector3.new(0, 5, 0) -- Adjust the Y value to position the character on top of the balloon
+                HRP.CFrame = CFrame.new(characterPosition)
+            end
+        end
+    end
+end
+
 	local currentTime = os.time()
 	if getgenv().MoneyPrinter.serverHopper then
 		if not getgenv().MoneyPrinter.avoidCooldown or (getgenv().MoneyPrinter.avoidCooldown and currentTime - startTime >= getgenv().MoneyPrinter.minServerTime) then
