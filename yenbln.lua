@@ -248,22 +248,25 @@ while getgenv().MoneyPrinter.autoBalloons do
                     
                     -- Stop using the slingshot
                     Slingshot.stopWeapon()
+                    
+                    -- Wait for a moment
+                    task.wait(1)
+                    
+                    -- Check for breakable gifts
+                    for _, BreakableGift in pairs(workspace.__THINGS.BreakableGifts:GetChildren()) do
+                        task.wait(0.03)
+                        -- Move to the position of the breakable gift
+                        HRP.CFrame = CFrame.new(BreakableGift.Position)
+
+                        -- Check if the character is close to the breakable gift's position
+                        local distanceToGift = (BreakableGift.Position - HRP.Position).Magnitude
+                        if distanceToGift < 3 then
+                            -- Hit the breakable gift
+                            Library.Network.Fire("Breakables_PlayerDealDamage", BreakableGift.Id)
+                        end
+                    end
                 end
             end
-        end
-    end
-    
-    -- Check for breakable gifts
-    for _, BreakableGift in pairs(workspace.__THINGS.BreakableGifts:GetChildren()) do
-        task.wait(0.03)
-        -- Move to the position of the breakable gift
-        HRP.CFrame = CFrame.new(BreakableGift.Position)
-
-        -- Check if the character is close to the breakable gift's position
-        local distanceToGift = (BreakableGift.Position - HRP.Position).Magnitude
-        if distanceToGift < 3 then
-            -- Hit the breakable gift
-            Library.Network.Fire("Breakables_PlayerDealDamage", BreakableGift.Id)
         end
     end
 	local currentTime = os.time()
