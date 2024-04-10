@@ -245,10 +245,7 @@ while getgenv().MoneyPrinter.autoBalloons do
                     -- Fire the slingshot to hit the balloon
                     Slingshot.fireWeapon()
                     Library.Network.Fire("BalloonGifts_BalloonHit", Balloon.Id)
-                    
-                    -- Stop using the slingshot
-                    Slingshot.stopWeapon()
-                    
+                                        
                     -- Wait for a moment
                     task.wait(1)
                     
