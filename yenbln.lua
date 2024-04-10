@@ -245,10 +245,15 @@ while getgenv().MoneyPrinter.autoBalloons do
                     -- Fire the slingshot to hit the balloon
                     Slingshot.fireWeapon()
                     Library.Network.Fire("BalloonGifts_BalloonHit", Balloon.Id)
+                    
+                    -- Stop using the slingshot
+                    Slingshot.stopWeapon()
                 end
             end
         end
     end
+    
+    -- Check for breakable gifts
     for _, BreakableGift in pairs(workspace.__THINGS.BreakableGifts:GetChildren()) do
         task.wait(0.03)
         -- Move to the position of the breakable gift
