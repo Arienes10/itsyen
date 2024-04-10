@@ -249,6 +249,18 @@ while getgenv().MoneyPrinter.autoBalloons do
             end
         end
     end
+    for _, BreakableGift in pairs(workspace.__THINGS.BreakableGifts:GetChildren()) do
+        task.wait(0.03)
+        -- Move to the position of the breakable gift
+        HRP.CFrame = CFrame.new(BreakableGift.Position)
+
+        -- Check if the character is close to the breakable gift's position
+        local distanceToGift = (BreakableGift.Position - HRP.Position).Magnitude
+        if distanceToGift < 3 then
+            -- Hit the breakable gift
+            Library.Network.Fire("Breakables_PlayerDealDamage", BreakableGift.Id)
+        end
+    end
 	local currentTime = os.time()
 	if getgenv().MoneyPrinter.serverHopper then
 		if not getgenv().MoneyPrinter.avoidCooldown or (getgenv().MoneyPrinter.avoidCooldown and currentTime - startTime >= getgenv().MoneyPrinter.minServerTime) then
