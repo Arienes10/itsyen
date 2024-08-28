@@ -2,7 +2,7 @@ script_key="nFctmDToNwxZmwTxauCTTXnHiLBpnNYs";
 -- Please Read FAQ channel for more info! Make sure you understand these parameters
 -- If not sure ask info in channel
 _G.GPROGRESS_MODE = "Hybrid"
-_G.GRANK_TO = 99
+_G.GRANK_TO = 20
 _G.GZONE_TO = 999 -- ONLY increase above 99 to go to world2, only when 100% sure, there is no way back for the "best zone" quests etc. 
 _G.GMAX_EGG_SLOTS = 40
 _G.GMAX_EQUIP_SLOTS = 80
