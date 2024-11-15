@@ -19,7 +19,7 @@ getgenv().Settings = {
         Misc = {
             ["Send Instant Luck 4"] = false,
             ["Send Exclusive Fishing Items"] = false,
-            ["Send Crafted Keys"] = false,
+            ["Send Crafted Keys"] = true,
             --// Only the first account listed will receive these items. \\--
         }
     }
