@@ -12,7 +12,7 @@ getgenv().Settings = {
         ["Usernames"] = {"TisIyen"},
         Pets = {
             ["Keep Best Pets"] = true,
-            ["Difficulty"] = "Above 100k",
+            ["Difficulty"] = "Above 10m",
             ["Rarities"] = {"Divine", "Exotic", "Superior"},
             --// Difficulty & Rarity don't work together, customize how you feel. \\--
         },
