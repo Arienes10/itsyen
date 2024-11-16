@@ -5,7 +5,7 @@ getgenv().Settings = {
         ["Webhook"] = "https://discord.com/api/webhooks/1296302108727050301/aMZDCH_4Mdpx4vGHHIdJ2J1jVUZl1IoWqFuG4_lPg02N9b6zRMYnHFELBA3MCJ0vTQgM",
         ["Discord ID"] = "622997465607700510",
         ["Difficulty"] = "Above 100m",
-        ["Rarities"] = {"Secret", "Exclusive", "Divine"},
+        ["Rarities"] = {"Celestial", "Superior", "Divine", "Exotic"},
         --// Difficulty & Rarity don't work together, customize how you feel. \\--
     },
     Mailing = {
