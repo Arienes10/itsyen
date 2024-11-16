@@ -42,6 +42,7 @@ getgenv().Settings = {
             --// Example Settings, everything is editable.
             ["Crystal Key"] = {Class = "Misc", Price = "+20%"},
             ["Secret Key"] = {Class = "Misc", Price = "+20%"},
+            ["Exclusive Treasure Chest"] = {Class = "Lootbox", Price = "+20%"},
             ["Fishing Bait 5"] = {Class = "Consumable", Price = "+20%"},
             ["All Rarity: Celestial"] = {Class = "Pet", Price = "20%"},
             ["All Rarity: Superior"] = {Class = "Pet", Price = "20%"}, --// Normal RAP.
