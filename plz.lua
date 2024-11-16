@@ -43,7 +43,9 @@ getgenv().Settings = {
             ["Crystal Key"] = {Class = "Misc", Price = "+20%"},
             ["Secret Key"] = {Class = "Misc", Price = "+20%"},
             ["Fishing Bait 5"] = {Class = "Consumable", Price = "+20%"},
+            ["All Rarity: Celestial"] = {Class = "Pet", Price = "20%"},
             ["All Rarity: Superior"] = {Class = "Pet", Price = "20%"}, --// Normal RAP.
+            ["All Rarity: Divine"] = {Class = "Pet", Price = "20%"},
             ["All Rarity: Exotic"] = {Class = "Pet", Price = "10%"}, --// 20% above or less of RAP.
             -- ["All Rarity: Mythical"] = {Class = "Pet", Price = "-10%"}, --// 20% below or less of RAP.
             -- ["RAP Above: 15m"] = {Class = "Pet", Price = -5000}, --// 5k off of RAP & RAP Above 15m.
