@@ -49,7 +49,7 @@ getgenv().Settings = {
         },
         Serverhop = {
             ["Switch Servers"] = true,
-            ["Teleport Delay (m)"] = 15,
+            ["Teleport Delay (m)"] = 30,
         },
         Webhook = {
             ["URL"] = "https://discord.com/api/webhooks/1294610974426533959/j4JZHNBItw-D157fym1pIzdjqesNDf7zoykE1eg6ChJr_3uXnRu1pn4DzPYz6qD9V74k",
