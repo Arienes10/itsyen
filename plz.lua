@@ -40,8 +40,8 @@ getgenv().Settings = {
         Active = true,
         Items = {
             --// Example Settings, everything is editable.
-            ["All Rarity: Superior"] = {Class = "Pet", Price = "10%"}, --// Normal RAP.
-            ["All Rarity: Exotic"] = {Class = "Pet", Price = "10%"}, --// 20% above or less of RAP.
+            ["All Rarity: Superior"] = {Class = "Pet", Price = "20%"}, --// Normal RAP.
+            ["All Rarity: Exotic"] = {Class = "Pet", Price = "5%"}, --// 20% above or less of RAP.
             ["All Rarity: Mythical"] = {Class = "Pet", Price = "-10%"}, --// 20% below or less of RAP.
             ["RAP Above: 15m"] = {Class = "Pet", Price = -5000}, --// 5k off of RAP & RAP Above 15m.
             ["Difficulty Above: 5m"] = {Class = "Pet", Price = "10%"}, --// 10% above or less of RAP & Difficulty Above 5m.
@@ -66,7 +66,7 @@ getgenv().Settings = {
         },
         Other = {
             ["Auto Accept Mail"] = true,
-            ["Diamonds Hit: 1b Sendout"] = "TisIyen",
+            ["Diamonds Hit: 10m Sendout"] = "imjustyou_3",
             ["Always Try Adding Listings"] = true,
             ["Never Join Friendslist"] = false,
         },
