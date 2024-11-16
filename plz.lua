@@ -40,8 +40,8 @@ getgenv().Settings = {
         Active = true,
         Items = {
             --// Example Settings, everything is editable.
-            ["Crystal Key"] = {Class = "Misc", Price = "+40%"},
-            ["Secret Key"] = {Class = "Misc", Price = "+40%"},
+            ["Crystal Key"] = {Class = "Misc", Price = "+25%"},
+            ["Secret Key"] = {Class = "Misc", Price = "+25%"},
             ["Exclusive Treasure Chest"] = {Class = "Lootbox", Price = "+20%"},
             ["Fishing Bait 5"] = {Class = "Consumable", Price = "+20%"},
             ["All Rarity: Celestial"] = {Class = "Pet", Price = "20%"},
