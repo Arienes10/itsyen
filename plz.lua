@@ -45,7 +45,9 @@ getgenv().Settings = {
             ["All Rarity: Mythical"] = {Class = "Pet", Price = "-10%"}, --// 20% below or less of RAP.
             ["RAP Above: 15m"] = {Class = "Pet", Price = -5000}, --// 5k off of RAP & RAP Above 15m.
             ["Difficulty Above: 5m"] = {Class = "Pet", Price = "10%"}, --// 10% above or less of RAP & Difficulty Above 5m.
-            ["Kitsune Fox"] = {Class = "Pet", Price = 15000, Amount = 2}, --// Normal Listing Price.
+            ["Crystal Key"] = {Class = "Misc", Price = "+20%"},
+            ["Secret Key"] = {Class = "Misc", Price = "+20%"},
+            ["Fishing Bait 5"] = {Class = "Consumable", Price = "+20%"},
         },
         Serverhop = {
             ["Switch Servers"] = true,
