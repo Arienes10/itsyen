@@ -44,6 +44,7 @@ getgenv().Settings = {
             ["Secret Key"] = {Class = "Misc", Price = "+25%"},
             ["Exclusive Treasure Chest"] = {Class = "Lootbox", Price = "+20%"},
             ["Fishing Bait 5"] = {Class = "Consumable", Price = "+20%"},
+            ["All Rarity: Exclusive"] = {Class = "Pet", Price = "+30%"},
             ["All Rarity: Celestial"] = {Class = "Pet", Price = "20%"},
             ["All Rarity: Superior"] = {Class = "Pet", Price = "20%"}, --// Normal RAP.
             ["All Rarity: Divine"] = {Class = "Pet", Price = "20%"},
