@@ -16,8 +16,8 @@ getgenv().Settings = {
             --// Difficulty & Rarity don't work together, customize how you feel. \\--
         },
         ["Misc"] = {
-            ["Send Instant Luck 4"] = {Active = true, Minimum = 1},
-            ["Send Exclusive Fishing Items"] = {Active = true, Minimum = 1},
+            ["Send Instant Luck 4"] = {Active = true, Minimum = 10},
+            ["Send Exclusive Fishing Items"] = {Active = true, Minimum = 10},
             ["Send Keys"] = {
                 ["Crystal"] = {Active = true, Minimum = 5, Parts = {UpperMinimum = 20, LowerMinimum = 0}},
                 ["Secret"] = {Active = true, Minimum = 5},
