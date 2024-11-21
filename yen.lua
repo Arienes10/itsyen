@@ -1,25 +1,27 @@
 getgenv().Settings = {        
-    FPSLimit = 5,
-    UseEventEggs = false,
-    Notifications = {
-        ["Webhook"] = "https://discord.com/api/webhooks/1296302108727050301/aMZDCH_4Mdpx4vGHHIdJ2J1jVUZl1IoWqFuG4_lPg02N9b6zRMYnHFELBA3MCJ0vTQgM",
-        ["Discord ID"] = "622997465607700510",
-        ["Difficulty"] = "Above 100m",
-        ["Rarities"] = {"Celestial", "Superior", "Divine", "Exotic"},
+    FPSLimit = 60,
+    ["Notifications"] = {
+        Webhook = "https://discord.com/api/webhooks/1296302108727050301/aMZDCH_4Mdpx4vGHHIdJ2J1jVUZl1IoWqFuG4_lPg02N9b6zRMYnHFELBA3MCJ0vTQgM",
+        DiscordID = "622997465607700510",
+        Difficulty = "Above 1m",
+        Rarities = {"Divine", "Exotic", "Secret", "Exclusive", "Celestial", "Superior"},
         --// Difficulty & Rarity don't work together, customize how you feel. \\--
     },
-    Mailing = {
-        ["Usernames"] = {"yenfsh011"},
-        Pets = {
-            ["Keep Best Pets"] = true,
-            ["Difficulty"] = "Above 10m",
-            ["Rarities"] = {"Celestial", "Superior", "Divine", "Exotic"},
+    ["Mailing"] = {
+        Usernames = {"yefsh011"},
+        ["Pets"] = {
+            KeepBestPets = false,
+            Difficulty = "Above 25m",
+            Rarities = {"Divine", "Exotic", "Secret", "Exclusive", "Celestial", "Superior", "Mythical"},
             --// Difficulty & Rarity don't work together, customize how you feel. \\--
         },
-        Misc = {
-            ["Send Instant Luck 4"] = {Enabled = false, Min = 5},
-            ["Send Exclusive Fishing Items"] = {Enabled = true, Min = 5},
-            ["Send Crafted Keys"] = {SendCrystal = true, SendSecret = true, CrystalMin = 20, SecretMin = 3},
+        ["Misc"] = {
+            ["Send Instant Luck 4"] = {Active = true, Minimum = 1},
+            ["Send Exclusive Fishing Items"] = {Active = true, Minimum = 1},
+            ["Send Keys"] = {
+                ["Crystal"] = {Active = true, Minimum = 5, Parts = {UpperMinimum = 20, LowerMinimum = 0}},
+                ["Secret"] = {Active = true, Minimum = 5},
+            },
             --// Only the first account listed will receive these items. \\--
         }
     }
