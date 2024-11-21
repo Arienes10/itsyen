@@ -4,7 +4,7 @@ getgenv().Settings = {
         Webhook = "https://discord.com/api/webhooks/1296302108727050301/aMZDCH_4Mdpx4vGHHIdJ2J1jVUZl1IoWqFuG4_lPg02N9b6zRMYnHFELBA3MCJ0vTQgM",
         DiscordID = "622997465607700510",
         Difficulty = "Above 1m",
-        Rarities = {"Divine", "Exotic", "Secret", "Exclusive", "Celestial", "Superior"},
+        Rarities = {"Divine", "Exotic", "Secret", "Exclusive", "Celestial"},
         --// Difficulty & Rarity don't work together, customize how you feel. \\--
     },
     ["Mailing"] = {
@@ -12,7 +12,7 @@ getgenv().Settings = {
         ["Pets"] = {
             KeepBestPets = true,
             Difficulty = "Above 25m",
-            Rarities = {"Divine", "Exotic", "Secret", "Exclusive", "Celestial", "Superior"},
+            Rarities = {"Divine", "Exotic", "Secret", "Exclusive", "Celestial"},
             --// Difficulty & Rarity don't work together, customize how you feel. \\--
         },
         ["Misc"] = {
