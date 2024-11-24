@@ -1,4 +1,4 @@
-getgenv().Settings = {        
+--[[getgenv().Settings = {        
     FPSLimit = 60,
     ["Notifications"] = {
         Webhook = "https://discord.com/api/webhooks/1296302108727050301/aMZDCH_4Mdpx4vGHHIdJ2J1jVUZl1IoWqFuG4_lPg02N9b6zRMYnHFELBA3MCJ0vTQgM",
@@ -26,7 +26,7 @@ getgenv().Settings = {
         }
     }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/957ebb42504c2c23a15c8e78a4758f38.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/957ebb42504c2c23a15c8e78a4758f38.lua"))()]]
 
 -- script_key = "OFSIayPMiDwtZOiHngjLsarLnIqbAclq";
 -- _G.GDO_LINE_FOR_HUGE = true
@@ -36,3 +36,6 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/957ebb42504c2c
 -- _G.GWEBHOOK_LINK = "https://discord.com/api/webhooks/1296302108727050301/aMZDCH_4Mdpx4vGHHIdJ2J1jVUZl1IoWqFuG4_lPg02N9b6zRMYnHFELBA3MCJ0vTQgM"
 -- _G.GMAIL_RECEIVERS = {"imjustyou_3"}
 -- loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
+
+script_key="FmiZFMjyNRUUCloFgkKZMaSZRCbKLEli";
+loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
