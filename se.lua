@@ -28,14 +28,14 @@
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/957ebb42504c2c23a15c8e78a4758f38.lua"))()]]
 
--- script_key = "OFSIayPMiDwtZOiHngjLsarLnIqbAclq";
--- _G.GDO_LINE_FOR_HUGE = true
--- _G.GGFX_MODE = 1
--- _G.GZONE_TO = 99 -- to enter event from W3 intead put 999
--- _G.GWEBHOOK_USERID = "622997465607700510"
--- _G.GWEBHOOK_LINK = "https://discord.com/api/webhooks/1296302108727050301/aMZDCH_4Mdpx4vGHHIdJ2J1jVUZl1IoWqFuG4_lPg02N9b6zRMYnHFELBA3MCJ0vTQgM"
--- _G.GMAIL_RECEIVERS = {"imjustyou_3"}
--- loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
+script_key = "OFSIayPMiDwtZOiHngjLsarLnIqbAclq";
+ _G.GDO_AUTUMN_EVENT = true
+_G.GGFX_MODE = 1
+_G.GZONE_TO = 99 -- to enter event from W3 intead put 999
+_G.GWEBHOOK_USERID = "622997465607700510"
+_G.GWEBHOOK_LINK = "https://discord.com/api/webhooks/1296302108727050301/aMZDCH_4Mdpx4vGHHIdJ2J1jVUZl1IoWqFuG4_lPg02N9b6zRMYnHFELBA3MCJ0vTQgM"
+_G.GMAIL_RECEIVERS = {"GamingIver15"}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
 
-script_key="FmiZFMjyNRUUCloFgkKZMaSZRCbKLEli";
-loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
+-- script_key="FmiZFMjyNRUUCloFgkKZMaSZRCbKLEli";
+-- loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
