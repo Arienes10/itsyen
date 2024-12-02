@@ -130,8 +130,8 @@ getgenv().Settings = {
         Active = true,
         Items = {
             ["All Huges"] = {Class = "Pet", Price = "-5%"},
-            ["Turkey Gift"] = {Class = "Lootbox", Price = "+5%"},
-            ["Autumn Gift"] = {Class = "Lootbox", Price = "+5%"},
+            ["Turkey Gift"] = {Class = "Lootbox", Price = "-5%"},
+            ["Autumn Gift"] = {Class = "Lootbox", Price = "-5%"},
         },
         Serverhop = {
             ["Switch Servers"] = true,
